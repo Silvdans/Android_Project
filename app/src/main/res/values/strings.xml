@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Android_Project</string>
+    <string name="txt_btn_info_Student1">Hugo</string>
+    <string name="txt_btn_info_Student2">Loic</string>
+    <string name="txt_btn_info_Student3">Mathis</string>
+
+
 </resources>
