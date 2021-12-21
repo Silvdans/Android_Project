@@ -17,7 +17,7 @@ class MainActivity : BaseActivity() {
             newIntent.putExtra("title","Zone 1")
             startActivity(newIntent)
         })
-
+        setHeaderTitle("Epsi")
         buttonZone2.setOnClickListener(View.OnClickListener {
             val newIntent = Intent(application,CategoryActivity::class.java)
             newIntent.putExtra("title","Zone 2")
