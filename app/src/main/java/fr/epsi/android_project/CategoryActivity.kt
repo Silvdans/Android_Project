@@ -1,7 +1,11 @@
 package fr.epsi.android_project
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import android.widget.Toast
+import androidx.core.view.get
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import okhttp3.*
@@ -54,5 +58,6 @@ class CategoryActivity : BaseActivity() {
                 })
             }
         })
+
     }
 }
