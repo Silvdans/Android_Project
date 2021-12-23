@@ -6,44 +6,49 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.core.content.ContextCompat.startActivity
+import com.squareup.picasso.Picasso
+import org.w3c.dom.Text
 
 
-class CategoryAdapter(val category : ArrayList<Category>): RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
+class ProductAdapter(val product : ArrayList<Product>): RecyclerView.Adapter<ProductAdapter.ViewHolder>() {
 
     class ViewHolder(private val context: Context, view: View) : RecyclerView.ViewHolder(view),
         View.OnClickListener {
-        val button = view.findViewById<Button>(R.id.button_rayon)
-        var category : Category? = null
+        val imageViewProduct = view.findViewById<ImageView>(R.id.imageViewProduct)
+        var description = view.findViewById<TextView>(R.id.description)
+        val name = view.findViewById<TextView>(R.id.productName)
+        var product : Product? = null
 
         init {
-            button.setOnClickListener(this)
+            itemView.setOnClickListener(this)
         }
 
         override fun onClick(v: View?) {
-            val newIntent = Intent(context,ProductActivity::class.java)
-            newIntent.putExtra("title", category?.title)
-            newIntent.putExtra("url", category?.product_url)
-            startActivity(context,newIntent,null)
+
         }
     }
 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        val category = category.get(position)
-        holder.button.text = category.title
-        holder.category = category
+        val product = product.get(position)
+        Picasso.get().load(product.picture_url).into(holder.imageViewProduct)
+        holder.description.text = product.description
+        holder.name.text = product.name
+
     }
 
     override fun getItemCount(): Int {
-        return category.size
+        return product.size
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(viewGroup.context)
-            .inflate(R.layout.rayons, viewGroup, false)
+            .inflate(R.layout.products, viewGroup, false)
 
         return ViewHolder(viewGroup.context,view)
     }

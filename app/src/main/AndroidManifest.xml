@@ -13,6 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Project">
         <activity
+            android:name=".Product"
+            android:exported="false" />
+        <activity
+            android:name=".ProductAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ProductActivity"
+            android:exported="false" />
+        <activity
             android:name=".ProductLIst"
             android:exported="false" />
         <activity

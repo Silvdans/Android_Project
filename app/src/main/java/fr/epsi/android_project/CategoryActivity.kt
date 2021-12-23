@@ -49,7 +49,7 @@ class CategoryActivity : BaseActivity() {
                         val jsCategory = jsArrayCategory.getJSONObject(i)
                         val category = Category(jsCategory.optString("category_id",""),
                             jsCategory.optString("title",""),
-                            jsCategory.optString("product_url",""))
+                            jsCategory.optString("products_url",""))
                         categories.add(category)
                     }
                 }
