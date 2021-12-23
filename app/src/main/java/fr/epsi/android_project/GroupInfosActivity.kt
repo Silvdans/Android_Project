@@ -1,5 +1,6 @@
 package fr.epsi.android_project
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -43,5 +44,6 @@ class GroupInfosActivity : AppCompatActivity() {
             newIntent.putExtra("groupe","Groupe G1")
             startActivity(newIntent)
         })
+
     }
 }
