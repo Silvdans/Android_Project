@@ -10,6 +10,7 @@ class StudentsInfosActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_students_info)
+        showBack()
         intent.getStringExtra("title")?.let { setHeaderTitle(it) }
 
         val imageView = findViewById<ImageView>(R.id.imageViewStudent)
@@ -20,9 +21,5 @@ class StudentsInfosActivity : BaseActivity() {
         val groupe = intent.getStringExtra("groupe")
 
         Picasso.get().load(urlImage).into(imageView)
-        PrintWriter(name)
-        PrintWriter(firstname)
-        PrintWriter(email)
-        PrintWriter(groupe)
     }
 }

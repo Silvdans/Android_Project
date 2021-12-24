@@ -15,7 +15,7 @@ class GroupInfosActivity : AppCompatActivity() {
         val buttonStudent2 = findViewById<Button>(R.id.button_info_Student2)
         val buttonStudent3 = findViewById<Button>(R.id.button_info_Student3)
         buttonStudent1.setOnClickListener(View.OnClickListener {
-            val newIntent = Intent(application,GroupInfosActivity::class.java)
+            val newIntent = Intent(application,StudentsInfosActivity::class.java)
             newIntent.putExtra("title","Nom")
             newIntent.putExtra("urlImage","https://media-exp1.licdn.com/dms/image/C4D03AQGRGRdI01mGkg/profile-displayphoto-shrink_100_100/0/1631544251476?e=1642032000&v=beta&t=LlW6zqYOnGnE2G5fF3QQGoNYrXXbUipVNsD8hfT2r-k")
             newIntent.putExtra("name","DAUPHIN")
@@ -25,7 +25,7 @@ class GroupInfosActivity : AppCompatActivity() {
             startActivity(newIntent)
         })
         buttonStudent2.setOnClickListener(View.OnClickListener {
-            val newIntent = Intent(application,GroupInfosActivity::class.java)
+            val newIntent = Intent(application,StudentsInfosActivity::class.java)
             newIntent.putExtra("title","Nom")
             newIntent.putExtra("urlImage","https://media-exp1.licdn.com/dms/image/C4E03AQHDpb1jWGryKA/profile-displayphoto-shrink_800_800/0/1607439975563?e=1644451200&v=beta&t=UYphiSZtgDf8AxgVqGM4NAZ3Ml3YDZeT7LE5jS8J9uw")
             newIntent.putExtra("name","DELPIERRE")
@@ -35,7 +35,7 @@ class GroupInfosActivity : AppCompatActivity() {
             startActivity(newIntent)
         })
         buttonStudent3.setOnClickListener(View.OnClickListener {
-            val newIntent = Intent(application,GroupInfosActivity::class.java)
+            val newIntent = Intent(application,StudentsInfosActivity::class.java)
             newIntent.putExtra("title","Nom")
             newIntent.putExtra("urlImage","https://media-exp1.licdn.com/dms/image/C4E03AQEQwHe7sP9_Kg/profile-displayphoto-shrink_200_200/0/1626286353715?e=1643846400&v=beta&t=3ilATSVbQ-ujmehobrowz9yaDjAzn4F1SfgOjABAqJY")
             newIntent.putExtra("name","RECLUS")

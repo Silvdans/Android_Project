@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GroupInfosActivity">
+    tools:context=".GroupInfosActivity"
+    android:orientation="vertical">
 
     <include
         layout="@layout/layout_header"
@@ -24,11 +25,12 @@
         android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
         android:text="@string/txt_btn_info_Student2" />
+
     <Button
         android:id="@+id/button_info_Student3"
-        android:layout_marginTop="20dp"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
         android:text="@string/txt_btn_info_Student3" />
-</RelativeLayout>
+</LinearLayout>
