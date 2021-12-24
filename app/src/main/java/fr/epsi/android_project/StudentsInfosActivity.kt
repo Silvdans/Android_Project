@@ -6,7 +6,7 @@ import android.widget.ImageView
 import com.squareup.picasso.Picasso
 import java.io.PrintWriter
 
-class StudentsInfosActivity : AppCompatActivity() {
+class StudentsInfosActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_students_info)
@@ -24,7 +24,5 @@ class StudentsInfosActivity : AppCompatActivity() {
         PrintWriter(firstname)
         PrintWriter(email)
         PrintWriter(groupe)
-
-
     }
 }
