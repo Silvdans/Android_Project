@@ -22,7 +22,7 @@ class CategoryAdapter(val category : ArrayList<Category>): RecyclerView.Adapter<
         }
 
         override fun onClick(v: View?) {
-            val newIntent = Intent(context,ProductActivity::class.java)
+            val newIntent = Intent(context,ProductListActivity::class.java)
             newIntent.putExtra("title", category?.title)
             newIntent.putExtra("url", category?.product_url)
             startActivity(context,newIntent,null)

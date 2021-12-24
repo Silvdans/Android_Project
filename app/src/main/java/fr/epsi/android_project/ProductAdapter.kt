@@ -28,7 +28,11 @@ class ProductAdapter(val product : ArrayList<Product>): RecyclerView.Adapter<Pro
         }
 
         override fun onClick(v: View?) {
-
+            val newIntent = Intent(context,ProductDetailActivity::class.java)
+            newIntent.putExtra("title", product?.name)
+            newIntent.putExtra("url", product?.picture_url)
+            newIntent.putExtra("description",product?.description)
+            startActivity(context,newIntent,null)
         }
     }
 
@@ -39,6 +43,7 @@ class ProductAdapter(val product : ArrayList<Product>): RecyclerView.Adapter<Pro
         Picasso.get().load(product.picture_url).into(holder.imageViewProduct)
         holder.description.text = product.description
         holder.name.text = product.name
+        holder.product = product
 
     }
 

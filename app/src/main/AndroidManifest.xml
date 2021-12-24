@@ -13,10 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Project">
         <activity
+            android:name=".ProductDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".StudentsInfosActivity"
             android:exported="false" />
         <activity
-            android:name=".ProductActivity"
+            android:name=".ProductListActivity"
             android:exported="false" />
         <activity
             android:name=".CategoryActivity"

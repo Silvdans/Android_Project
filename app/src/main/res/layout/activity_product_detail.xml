@@ -10,4 +10,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <ImageView
+        android:id="@+id/imageViewProductDetail"
+        android:layout_marginTop="20px"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/descriptionDetailProduct"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:textSize="14sp" />
+
 </LinearLayout>
