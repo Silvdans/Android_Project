@@ -16,7 +16,7 @@ class StudentsInfosActivity : BaseActivity() {
         val imageView = findViewById<ImageView>(R.id.imageViewStudent)
         val urlImage = intent.getStringExtra("urlImage")
 
-        val infoView = findViewById<TextView>(R.id.nameViewStudent)
+        val infoView = findViewById<TextView>(R.id.infoViewStudent)
         val info = intent.getStringExtra("info")
 
         val nameView = findViewById<TextView>(R.id.nameViewStudent)
