@@ -11,6 +11,7 @@ class GroupInfosActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_group_infos)
+        showBack()
         setHeaderTitle("Infos")
         val buttonStudent1 = findViewById<Button>(R.id.button_info_Student1)
         val buttonStudent2 = findViewById<Button>(R.id.button_info_Student2)
@@ -25,6 +26,7 @@ class GroupInfosActivity : BaseActivity() {
             newIntent.putExtra("email","Hugo.dauphin@epsi.fr")
             newIntent.putExtra("groupe","Groupe G1")
             startActivity(newIntent)
+
         })
         buttonStudent2.setOnClickListener(View.OnClickListener {
             val newIntent = Intent(application,StudentsInfosActivity::class.java)
@@ -36,6 +38,7 @@ class GroupInfosActivity : BaseActivity() {
             newIntent.putExtra("email","Loic.delpierre@epsi.fr")
             newIntent.putExtra("groupe","Groupe G1")
             startActivity(newIntent)
+
         })
         buttonStudent3.setOnClickListener(View.OnClickListener {
             val newIntent = Intent(application,StudentsInfosActivity::class.java)

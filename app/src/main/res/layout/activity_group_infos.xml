@@ -4,40 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
+
     <include
         layout="@layout/layout_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
     <ScrollView
+        android:background="@drawable/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-         <LinearLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
 
             <Button
                 android:id="@+id/button_info_Student1"
                 android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
+                android:background="@color/blue"
                 android:text="@string/txt_btn_info_Student1" />
+
             <Button
                 android:id="@+id/button_info_Student2"
-                android:layout_marginTop="20dp"
                 android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
                 android:text="@string/txt_btn_info_Student2" />
+
             <Button
                 android:id="@+id/button_info_Student3"
-                android:layout_marginTop="20dp"
                 android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
                 android:text="@string/txt_btn_info_Student3" />
+
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>
