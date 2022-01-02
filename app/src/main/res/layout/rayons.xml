@@ -8,7 +8,7 @@
         android:id="@+id/button_rayon"
         android:layout_width="300sp"
         android:layout_height="90sp"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="50dp"
         android:layout_gravity="center"/>
 
 </LinearLayout>
